@@ -1,0 +1,135 @@
+* {
+  margin: 0%;
+  padding: 0;
+  box-sizing: 0;
+}
+
+body {
+  background-color: rgb(104, 104, 243);
+}
+html {
+  background-color: blue;
+}
+
+.contenedor {
+  background-color: rgb(6, 6, 245);
+  background-image: url(./descarga.jpg);
+  background-repeat: no-repeat;
+  background-size: initial;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  column-gap: 10px;
+  row-gap: 15px;
+  height: 100vh;
+  margin: 40px;
+  grid-template-areas:
+    "header header header header"
+    "navegador navegador navegador navegador"
+    "section section section section"
+    "footer footer footer footer";
+}
+
+.header {
+  text-align: center;
+  font-size: 3rem;
+  grid-area: header;
+  font-style: normal;
+  margin-top: 10rem;
+}
+.navegador {
+  grid-area: navegador;
+}
+.section {
+  grid-area: section;
+}
+
+.footer {
+  grid-area: footer;
+}
+.final {
+  border-width: 40px;
+  background-color: rgb(243, 243, 239);
+  font-size: 1rem;
+}
+
+ul {
+  font-size: 2rem;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: yellow;
+}
+h2 {
+  text-align: justify;
+  position: right;
+  font-size: 0.5rem;
+  line-height: 1.6;
+  margin: 1rem;
+  margin-top: 1rem;
+}
+img {
+  margin: 1.5rem;
+  margin-left: 420px;
+}
+table {
+  margin: 1.5rem;
+  margin: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    background-color: yellow;
+    grid-template-areas:
+      "header"
+      "header"
+      "header"
+      "header"
+      "navegador"
+      "navegador"
+      "navegador"
+      "navegador"
+      "section"
+      "section"
+      "section"
+      "section"
+      "footer"
+      "footer"
+      "footer"
+      "footer";
+  }
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+  }
+
+  .navegador {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.5 rem;
+    margin: 0;
+  }
+  .ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.section {
+  display: flex;
+  flex-direction: wrap;
+  font-size: 0.5;
+  margin: 0;
+  text-align: left;
+}
+.iframe {
+  width: fit-content;
+}
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+}
