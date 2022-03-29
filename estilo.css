@@ -38,9 +38,7 @@ html {
   margin-top: 10rem;
   font-family: "Cinzel", serif;
 }
-.h1 {
-  font-size: 50rem;
-}
+
 .navegador {
   grid-area: navegador;
 }
