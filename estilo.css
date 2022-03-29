@@ -36,12 +36,21 @@ html {
   grid-area: header;
   font-style: normal;
   margin-top: 10rem;
+  font-family: "Cinzel", serif;
+}
+.h1 {
+  font-size: 50rem;
 }
 .navegador {
   grid-area: navegador;
 }
+
 .section {
   grid-area: section;
+  align-items: center;
+}
+.body {
+  background-color: blue;
 }
 
 .footer {
@@ -59,16 +68,19 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background-color: yellow;
+  background-color: rgb(245, 245, 239);
 }
+
 h2 {
-  text-align: justify;
-  position: right;
+  text-align: center;
+  position: center;
   font-size: 0.5rem;
   line-height: 1.6;
   margin: 1rem;
   margin-top: 1rem;
+  color: rgb(240, 240, 167);
 }
+
 img {
   margin: 1.5rem;
   margin-left: 420px;
@@ -113,6 +125,7 @@ table {
     flex-wrap: wrap;
     font-size: 0.5 rem;
     margin: 0;
+    background-color: yellow;
   }
   .ul {
     display: flex;
